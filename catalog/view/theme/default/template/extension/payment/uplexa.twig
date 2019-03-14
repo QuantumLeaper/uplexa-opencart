@@ -1,0 +1,52 @@
+<div class="buttons">
+  <div class="pull-right">
+    <a class="btn btn-primary" href="" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#uplexa-modal">{{ button_confirm }}</a>
+  </div>
+</div>
+	<link href='catalog/view/theme/default/stylesheet/uplexa-style.css' rel="stylesheet">
+	<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,800' rel='stylesheet'>
+<!--- Modal Popup --->
+<div class="modal" id="uplexa-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" onClick="window.location.reload()">&times;</span></button>
+                <span class='logo-upx' style='max-width: 30px; max-height: 30px;'> <img src='https://cdn.uplexa.com/img/upx.png' /></span>
+                <span class='upx-payment-text-header'><h2>{{ heading_title }}</h2></span>
+            </div>
+            <div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+					    <div class="col-md-auto">
+							<div class='upx-amount-send'>
+								<span class='upx-label'>Send:</span>
+								<div class='upx-amount-box'>{{ amount_upx }}</div><div class='upx-box'>UPX</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					    <div class="col-md-auto">
+							<div class='upx-address'>
+								<span class='upx-label'>To this address:</span>
+								<div class='upx-address-box'>{{ integrated_address }}</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					    <div class="col-md-auto">
+							<div class='upx-qr-code'>
+								<span class='upx-label'>Or scan QR:</span>
+								<div class='upx-qr-code-box'><img src='https://api.qrserver.com/v1/create-qr-code/? size=200x200&data={{ url }}' /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="modal-footer">
+                <a href='https://uplexa.com' target='_blank'>Help</a> | <a href='https://uplexa.com' target='_blank'>About uPlexa</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--- End Modal --->

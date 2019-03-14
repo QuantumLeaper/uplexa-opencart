@@ -1,0 +1,94 @@
+.modal-header {
+    height: 74px;
+    background-color:#1858bf;
+    background-repeat: repeat-x;
+}
+.logo-upx img {
+    max-width: 30px;
+    margin-top: 6px;
+}
+
+span.logo-upx {
+    float: left;
+}
+
+/*span.upx-payment-text-header {
+    float: left;
+    margin-left: 16px;
+    color: #fff;
+}
+*/
+.modal-body {
+	text-align: center;
+}
+
+.upx-label {
+    font-size: medium;
+	font-weight: bold;
+}
+
+.upx-amount-box {
+    background-color: #fff;
+    padding-top: 8px;
+	padding-bottom: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+	width: 45%;
+}
+
+.upx-box {
+    background-color: #666;
+    padding-top: 8px;
+	padding-bottom: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #666;
+    color: #fff;
+	width: 25%;
+}
+
+
+.upx-address-box {
+    word-wrap: break-word;
+	background-color: #fff;
+    padding: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+
+.upx-integrated-address {
+    float: left;
+}
+
+.upx-integrated-address-box {
+    word-wrap: break-word;
+    background-color: #fff;
+    padding: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+.upx-qr-code-box img {
+    width: 75%;
+
+}
+
+.upx-qr-code-box {
+    width: fit-content;
+    padding: 8px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+	background-color: #fff;
+}
+.modal-footer {
+	background-color: #1858bf;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+	font-size: 0.8rem;
+    border-radius: 0px 0px 0px 0px;
+}
